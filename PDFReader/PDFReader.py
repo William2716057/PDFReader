@@ -1,4 +1,4 @@
-import pyPDF2
+import PyPDF2
 
 def extractFromPDF(pdf_file: str) -> [str]:
     with open(pdf_file, 'rb') as pdf:
@@ -13,6 +13,6 @@ def extractFromPDF(pdf_file: str) -> [str]:
 
 
     if __name__ == '__main__':
-        extracted_text = extract_text_pdf('file.pdf')
+        extracted_text = extractFromPDF('file.pdf')
         for text in extracted_text:
             print(text)
